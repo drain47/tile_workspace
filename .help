@@ -127,10 +127,10 @@
 Установка подобранного графического окружения
 
 	Установка пакетов:
-		sudo pacman -S sxhkd bspwm polybar dmenu picom feh kitty chromium telegram-desktop pcmanfm code xarchiver
-	Загрузка конфигов:
+		sudo pacman -S sxhkd bspwm polybar dmenu picom feh kitty networkmanager chromium telegram-desktop pcmanfm code xarchiver rofi alsa-utils alsa-plugins pulseaudio	Загрузка конфигов:
 		git clone https://github.com/drain47/tile_workspace.git
 		cd tile_workspace
+		sudo systemctl start NetworkManager
 
 
 
