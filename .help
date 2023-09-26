@@ -44,7 +44,7 @@
 	Исправление ключей:
 		pacman -Sy archlinux-keyring && pacman -Sy
 	Установка базовых пакетов:
-		pacstrap -i /mnt base base-devel linux linux-firmware linux-headers archlinux-keyring sudo grub os-prober hwinfo dialog rp-pppoe dhcpcd wpa_supplicant dhclient iw git bash-completion unzip unrar ntfs-3g nano mc p7zip networkmanager
+		pacstrap -i /mnt base base-devel linux linux-firmware linux-headers archlinux-keyring sudo grub os-prober hwinfo dialog rp-pppoe dhcpcd wpa_supplicant dhclient iw git bash-completion unzip python python-gobject unrar ntfs-3g nano mc p7zip networkmanager
 	Создаём файл fstab:
 		genfstab -p /mnt >> /mnt/etc/fstab
 
@@ -128,9 +128,6 @@
 
 	Установка пакетов:
 		sudo pacman -S sxhkd bspwm polybar picom feh kitty chromium telegram-desktop pcmanfm code xarchiver rofi alsa-utils alsa-plugins pulseaudio pulseaudio-alsa pulseaudio-bluetooth jgmenu
-		git clone https://aur.archlinux.org/networkmanager-dmenu-git.git
-		cd networkmanager-dmenu-git
-		makepkg -si --skippgpcheck
 	Загрузка конфигов:
 		git clone https://github.com/drain47/tile_workspace.git
 		cd tile_workspace
