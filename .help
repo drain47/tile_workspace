@@ -127,14 +127,13 @@
 Установка подобранного графического окружения
 
 	Установка пакетов:
-		sudo pacman -S sxhkd bspwm polybar dmenu picom feh kitty networkmanager chromium telegram-desktop pcmanfm code xarchiver rofi alsa-utils alsa-plugins pulseaudio jgmenu
+		sudo pacman -S sxhkd bspwm polybar dmenu picom feh kitty networkmanager chromium telegram-desktop pcmanfm code xarchiver rofi alsa-utils alsa-plugins pulseaudio pulseaudio-alsa pulseaudio-bluetooth jgmenu
 		git clone https://aur.archlinux.org/networkmanager-dmenu-git.git
 		cd networkmanager-dmenu-git
 		makepkg -si --skippgpcheck
 	Загрузка конфигов:
 		git clone https://github.com/drain47/tile_workspace.git
 		cd tile_workspace
-		sudo systemctl start NetworkManager
 
 
 
