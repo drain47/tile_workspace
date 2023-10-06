@@ -1,5 +1,5 @@
 Инструкция по установке Arch Linux
-Скачать последнюю версию образа: https://www.archlinux.org/download/
+	Скачать последнюю версию образа: https://www.archlinux.org/download/
 
 
 Подключение к Интернет
@@ -135,31 +135,31 @@
 
 
 ####  SETUP BLACKARCH  ####
-sudo rm -rf /etc/pacman.d/gnupg
-sudo pacman-key --init
-sudo pacman-key --populate
-sudo pacman-key --update
-curl -O https://blackarch.org/strap.sh
-chmod +x strap.sh
-sha1sum strap.sh
-sed -i "s|pgp.mit.edu|18.9.60.141|g" strap.sh
-sh strap.sh
-pacman -Syy
+	sudo rm -rf /etc/pacman.d/gnupg
+	sudo pacman-key --init
+	sudo pacman-key --populate
+	sudo pacman-key --update
+	curl -O https://blackarch.org/strap.sh
+	chmod +x strap.sh
+	sha1sum strap.sh
+	sed -i "s|pgp.mit.edu|18.9.60.141|g" strap.sh
+	sh strap.sh
+	pacman -Syy
 
 
 ####  INSTALLING AUR PACKAGES  ####
-pacman -S --needed base-devel
-sudo pacman -S git
-git clone https://aur.archlinux.org/имя_пакета.git
-cd имя_пакета
-makepkg -si --skippgpcheck
+	pacman -S --needed base-devel
+	sudo pacman -S git
+	git clone https://aur.archlinux.org/имя_пакета.git
+	cd имя_пакета
+	makepkg -si --skippgpcheck
 
 
 ####  FAQ URLs  ####
-kali.org.ru/main-forum/blackarch/  -  BlackArch
-ziggi.org/ustanovka-i-nastroyka-arch-linux-xfce-chast-1/  - Arch Install
-https://hackware.ru/?p=6398  -  Arch Install (new)
-http://dotshare.it/ - Config Collection
-https://habr.com/ru/articles/721112/ - bspwm install
-https://habr.com/ru/articles/269967/ - bashrc
-https://github.com/polybar/polybar-scripts/tree/master - polybar scripts
+	kali.org.ru/main-forum/blackarch/  -  BlackArch
+	ziggi.org/ustanovka-i-nastroyka-arch-linux-xfce-chast-1/  - Arch Install
+	https://hackware.ru/?p=6398  -  Arch Install (new)
+	http://dotshare.it/ - Config Collection
+	https://habr.com/ru/articles/721112/ - bspwm install
+	https://habr.com/ru/articles/269967/ - bashrc
+	https://github.com/polybar/polybar-scripts/tree/master - polybar scripts
