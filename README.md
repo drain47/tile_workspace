@@ -1,4 +1,5 @@
 Инструкция по установке Arch Linux
+
 	Скачать последнюю версию образа: https://www.archlinux.org/download/
 
 
@@ -163,3 +164,5 @@
 	https://habr.com/ru/articles/721112/ - bspwm install
 	https://habr.com/ru/articles/269967/ - bashrc
 	https://github.com/polybar/polybar-scripts/tree/master - polybar scripts
+ 	https://losst.pro/nastrojka-zsh-i-oh-my-zsh - zsh settings
+  	https://habr.com/ru/companies/ruvds/articles/325522/ - coding bash scripts
