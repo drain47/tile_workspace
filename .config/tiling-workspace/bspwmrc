@@ -1,0 +1,21 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd -c ~/.config/tiling-workspace/sxhkd.conf &
+feh --bg-fill ~/.config/tiling-workspace/background.jpg &
+picom --config ~/.config/tiling-workspace/picom.conf &
+
+bspc monitor -d ' '  ' '  ' '  ' '
+
+bspc config window_gap          15
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config border_width         4
+bspc config normal_border_color "#151515"
+bspc config focused_border_color "#ff3344"
+
+killall -q polybar
+polybar -c ~/.config/tiling-workspace/polybar/config main &
+sudo systemctl start NetworkManager &
