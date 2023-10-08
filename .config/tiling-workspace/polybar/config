@@ -1,0 +1,39 @@
+;; INCLUDES ;;
+include-file = ~/.config/tiling-workspace/polybar/modules.ini
+include-file = ~/.config/tiling-workspace/polybar/colors.ini
+
+
+[fonts]
+text = "Fantasque Sans Mono:pixelsize=12;2"
+icons = "Material\-Design\-Iconic\-Font:size=14;3"
+
+
+[bar/main]
+bottom = true
+height = 22pt
+line-size = 2pt
+border-size = 3pt
+padding-left = 0
+padding-right = 0
+module-margin = 1
+wm-restack = bspwm
+background = ${colors.background}
+foreground = ${colors.foreground}
+border-color = ${colors.transparent}
+font-0 = ${fonts.text}
+font-1 = ${fonts.icons}
+cursor-click = pointer
+;radius = 1
+
+;tray-position = right
+;tray-detached = false
+;tray-maxsize = 16
+
+modules-left = launcher bspwm
+modules-center = title
+modules-right = time xkeyboard network pulseaudio sysmenu
+
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true

@@ -1,0 +1,9 @@
+* {
+  al:   #00000000;
+  bg:   #151515FF; /*background*/
+  bga:  #00ddff66; /*accent_color + transparent (selected)*/
+  bar:  #000000FF; /*(headers_foreground)*/
+  fg:   #ffee99FF; /*foreground*/
+  ac:   #00ddffFF; /*accent_color (headers)*/
+}
+
