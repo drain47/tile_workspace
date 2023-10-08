@@ -48,4 +48,4 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-exec bspwm -c ~/.config/tiling-workspace/bspwm.conf
+exec bspwm -c ~/.config/tiling-workspace/bspwmrc
