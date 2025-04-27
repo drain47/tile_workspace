@@ -113,7 +113,7 @@
 Установка Xorg
 
 	Основные пакеты:
-		sudo pacman -S mesa xorg-xinit xorg-apps xorg-server xf86-input-synaptics xterm
+		sudo pacman -S xorg mesa xorg-xinit xorg-apps xorg-server xf86-input-synaptics xterm
 	Драйвер видеокарты:
 		Intel:
 			sudo pacman -S xf86-video-intel
